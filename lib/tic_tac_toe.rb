@@ -76,5 +76,11 @@ def won?(board)
       end
     end
   end
-  return false 
+  return false
+end
+
+def full?(board)
+  board.all? do |element|
+    element == "X" || element == "O"
+  end 
 end
