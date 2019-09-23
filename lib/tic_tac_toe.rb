@@ -90,7 +90,7 @@ def draw?(board)
     true
   else
     false
-  end 
+  end
 end
 
 def over?(board)
