@@ -69,5 +69,9 @@ def current_player(board)
 end
 
 def won?(board)
-
-end 
+  WIN_COMBINATIONS.each_with_index do |combo, index|
+    if position_taken?(board, combo[0]) == true
+      if board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]]
+    end
+  end
+end
