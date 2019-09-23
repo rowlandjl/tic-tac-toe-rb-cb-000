@@ -104,5 +104,13 @@ def over?(board)
 end
 
 def winner(board)
-
-end 
+  if !won?(board)
+    nil
+  else
+    win = won?(board)
+    win.each do |index|
+      win = board[index]
+    end
+    win
+  end 
+end
