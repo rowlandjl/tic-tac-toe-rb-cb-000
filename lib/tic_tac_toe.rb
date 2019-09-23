@@ -88,11 +88,9 @@ end
 def draw?(board)
   if !won?(board) && full?(board)
     true
-  elsif won?(board)
+  else
     false
-  elsif !won?(board) && !full?(board)
-    false
-  end
+  end 
 end
 
 def over?(board)
@@ -112,5 +110,5 @@ def winner(board)
       win = board[index]
     end
     win
-  end 
+  end
 end
