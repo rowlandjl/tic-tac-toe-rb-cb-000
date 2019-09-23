@@ -82,15 +82,15 @@ end
 def full?(board)
   board.all? do |element|
     element == "X" || element == "O"
-  end 
+  end
 end
 
 def draw?(board)
   if !won?(board) && full?(board)
-    true 
+    true
   elsif won?(board)
-    false 
+    false
   elsif !won?(board) && !full?(board)
-    false 
+    false
   end 
-end 
+end
